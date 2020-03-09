@@ -1,0 +1,361 @@
+03/06/2020 10:45:09 [20323] no Content-Length
+03/06/2020 10:45:09 [20323] try to get cookie for the first time: 98 :  SVPNNETWORKCOOKIE=; path=/remote/network; expires=Sun, 11 Mar 1984 12:00:00 GMT; secure; httponly
+03/06/2020 10:45:09 [20323] no Content-Length
+03/06/2020 10:45:09 [20323] cookie: SVPNCOOKIE=8mjmQvoy/jQMWfUsVL4ObYFnhP9VVXMHB8Sc/zDTTEjAJKNAD20mRNqW/FqEjm70iNh9GAji7fOdMDlD+k8mwOKKKsw1RcnrveqG8H/SNXQqq0b6zrRmaShASaourKeWvb5Ca3dLXs8oH9jKUa5gpNDEseraBojevwtdSZnDEQE4FkHl+QNXHLmEqnfLC5skL3Vt/k27w032plr2QIsh+Q==
+03/06/2020 10:45:09 [20323] no Content-Length
+03/06/2020 10:45:09 [20323] no Content-Length
+03/06/2020 10:45:09 [20323] 0|212.80.170.130|443|1|10.61.0.0/255.255.0.0,10.58.198.101/255.255.255.255,170.186.103.0/255.255.255.0,170.186.104.0/255.255.255.0,170.186.105.0/255.255.255.0,170.186.106.0/255.255.255.0,10.60.0.0/255.255.0.0,10.62.2.0/255.255.255.0,10.62.3.0/255.255.255.0,10.62.4.0/255.255.255.0|8mjmQvoy/jQMWfUsVL4ObYFnhP9VVXMHB8Sc/zDTTEjAJKNAD20mRNqW/FqEjm70iNh9GAji7fOdMDlD+k8mwOKKKsw1RcnrveqG8H/SNXQqq0b6zrRmaShASaourKeWvb5Ca3dLXs8oH9jKUa5gpNDEseraBojevwtdSZnDEQE4FkHl+QNXHLmEqnfLC5skL3Vt/k27w032plr2QIsh+Q==|0
+03/06/2020 10:45:09 [20318] ssl vpn tunnel started
+03/06/2020 10:45:09 [20325] server=212.80.170.130[212.80.170.130] port=443[443] version=1 tunnel=10.61.0.0/255.255.0.0,10.58.198.101/255.255.255.255,170.186.103.0/255.255.255.0,170.186.104.0/255.255.255.0,170.186.105.0/255.255.255.0,170.186.106.0/255.255.255.0,10.60.0.0/255.255.0.0,10.62.2.0/255.255.255.0,10.62.3.0/255.255.255.0,10.62.4.0/255.255.255.0 cookie=8mjmQvoy/jQMWfUsVL4ObYFnhP9VVXMHB8Sc/zDTTEjAJKNAD20mRNqW/FqEjm70iNh9GAji7fOdMDlD+k8mwOKKKsw1RcnrveqG8H/SNXQqq0b6zrRmaShASaourKeWvb5Ca3dLXs8oH9jKUa5gpNDEseraBojevwtdSZnDEQE4FkHl+QNXHLmEqnfLC5skL3Vt/k27w032plr2QIsh+Q== exclusive routing: 0
+
+03/06/2020 10:45:09 [20325] starting pppd
+03/06/2020 10:45:09 [20325] use tty:/dev/pts/2
+03/06/2020 10:45:09 [20325] connecting to 212.80.170.130:443
+03/06/2020 10:45:09 [20325] [xml config]: GET /remote/fortisslvpn_xml ... (received 1353 bytes): 
+HTTP/1.1 200 OK
+Date: Fri, 06 Mar 2020 09:45:10 GMT
+Server: xxxxxxxx-xxxxx
+Transfer-Encoding: chunked
+Content-Type: text/xml
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000
+
+<?xml version='1.0' encoding='utf-8'?><sslvpn-tunnel ver='2' dtls='1' patch='1'><dtls-config heartbeat-interval='10' heartbeat-fail-count='10' heartbeat-idle-timeout='10' client-hello-timeout='10' /><tunnel-method value='ppp' /><tunnel-method value='tun' /><fos platform='FG900D' major='5' minor='06' patch='11' build='1700' branch='1700' /><client-config save-password='off' keep-alive='off' auto-connect='off' /><ipv4><assigned-addr ipv4='10.212.134.2' /><split-tunnel-info><addr ip='10.61.0.0' mask='255.255.0.0' /><addr ip='10.58.198.101' mask='255.255.255.255' /><addr ip='170.186.103.0' mask='255.255.255.0' /><addr ip='170.186.104.0' mask='255.255.255.0' /><addr ip='170.186.105.0' mask='255.255.255.0' /><addr ip='170.186.106.0' mask='255.255.255.0' /><addr ip='10.60.0.0' mask='255.255.0.0' /><addr ip='10.62.2.0' mask='255.255.255.0' /><addr ip='10.62.3.0' mask='255.255.255.0' /><addr ip='10.62.4.0' mask='255.255.255.0' /></split-tunnel-info></ipv4><idle-timeout val='3600' /><auth-timeout val='28800' /></sslvpn-tunnel>
+----
+
+03/06/2020 10:45:09 [20325] dns suffix: 
+
+03/06/2020 10:45:09 [20325] xml parsing split tunnel info
+03/06/2020 10:45:09 [20325] xml parse split tunnel info success. Buffer length: 258 bytes
+03/06/2020 10:45:10 [20325] Got local address from ppp, interface will be  up
+03/06/2020 10:45:10 [20325] ppp interface is up
+03/06/2020 10:45:10 [20325] run_scutil 212.80.170.130 0 0...
+03/06/2020 10:45:10 [20325] write argument OK.
+Generating pppd.resolv.conf...Done
+03/06/2020 10:45:12 [20347] begin sysconfig linux
+03/06/2020 10:45:12 [20347] Gateway to FGT: 10.60.40.1
+03/06/2020 10:45:12 [20347] delete route 1.1.1.1
+03/06/2020 10:45:12 [20347] Add the route for 212.80.170.130(10.60.40.1)
+03/06/2020 10:45:12 [20347] Setup split tunnel
+03/06/2020 10:45:12 [20347] route -n add -net 10.61.0.0 netmask 255.255.0.0 gw 10.212.134.2 dev ppp0
+03/06/2020 10:45:12 [20347] route -n add -net 10.58.198.101 netmask 255.255.255.255 gw 10.212.134.2 dev ppp0
+03/06/2020 10:45:12 [20347] route -n add -net 170.186.103.0 netmask 255.255.255.0 gw 10.212.134.2 dev ppp0
+03/06/2020 10:45:12 [20347] route -n add -net 170.186.104.0 netmask 255.255.255.0 gw 10.212.134.2 dev ppp0
+03/06/2020 10:45:12 [20347] route -n add -net 170.186.105.0 netmask 255.255.255.0 gw 10.212.134.2 dev ppp0
+03/06/2020 10:45:12 [20347] route -n add -net 170.186.106.0 netmask 255.255.255.0 gw 10.212.134.2 dev ppp0
+03/06/2020 10:45:12 [20347] route -n add -net 10.60.0.0 netmask 255.255.0.0 gw 10.212.134.2 dev ppp0
+03/06/2020 10:45:12 [20347] route -n add -net 10.62.2.0 netmask 255.255.255.0 gw 10.212.134.2 dev ppp0
+03/06/2020 10:45:12 [20347] route -n add -net 10.62.3.0 netmask 255.255.255.0 gw 10.212.134.2 dev ppp0
+03/06/2020 10:45:12 [20347] route -n add -net 10.62.4.0 netmask 255.255.255.0 gw 10.212.134.2 dev ppp0
+03/06/2020 10:47:31 [20323] signal rcved, logout now
+03/06/2020 10:47:31 [20325] killing pppd ...
+03/06/2020 10:47:31 [20325] kill_child:20327
+03/06/2020 10:47:31 [20325] kill_child:20347
+03/06/2020 10:47:31 [20318] kill_child:20325
+03/06/2020 10:47:31 [20318] kill_child:20323
+03/06/2020 13:44:56 [9680] set the loglevel to 1
+03/06/2020 13:44:56 [9685] set the loglevel to 1
+03/06/2020 13:44:56 [9685] sslvpn connection version:4.0.2332
+03/06/2020 13:44:56 [9685] rcv cmd:0 at state[0]
+03/06/2020 13:44:56 [9685] starting ssl vpn tunnel[4.0.2332]
+03/06/2020 13:44:56 [9689] route backup START
+03/06/2020 13:44:56 [9689] route backup DONE
+03/06/2020 13:44:56 [9690] execl /opt/forticlient-sslvpn/64bit/helper/get_fortisslvpn_info /opt/forticlient-sslvpn/64bit/helper 212.80.170.130 443   ...
+03/06/2020 13:44:56 [9690] trusted CA dir: /home/jose/.fctsslvpn_trustca
+03/06/2020 13:44:56 [9690] set loglevel to 1
+03/06/2020 13:44:56 [9690] Peer's certificate is not valid. action is 1
+03/06/2020 13:44:56 [9690] peer's certificate: 
+Certificate:$    Data:$        Version: 3 (0x2)$        Serial Number:$            0c:2e:8e:e3:42:4c:3f:5b:4b:f6:18:07:c6:da:c5:3d$    Signature Algorithm: sha256WithRSAEncryption$        Issuer: C=US, O=DigiCert Inc, CN=DigiCert SHA2 Secure Server CA$        Validity$            Not Before: Mar 21 00:00:00 2018 GMT$            Not After : Mar 25 12:00:00 2020 GMT$        Subject: C=ES, L=Madrid, O=WIZINK BANK, S.A., OU=WIZINK BANK SA., CN=accesopartners.wizink.es$        Subject Public Key Info:$            Public Key Algorithm: rsaEncryption$                Public-Key: (4096 bit)$                Modulus:$                    00:c7:ff:c7:df:b7:fe:f8:c5:1e:f9:c5:cb:f7:44:$                    66:27:8d:eb:d0:06:84:4c:30:9e:de:bf:e1:ab:bb:$                    30:aa:81:e6:7f:79:e9:5c:07:19:23:ea:6f:d0:9f:$                    2a:e8:58:2c:fe:7d:f6:52:1f:75:a5:4d:97:a5:a9:$                    d0:ca:1b:9b:96:c0:f2:4a:26:24:49:61:de:bc:74:$                    12:67:37:ac:50:1f:bc:ba:15:af:b8:33:62:4c:84:$                    7e:d3:0d:1b:88:37:7a:2c:0d:62:7c:ca:54:0b:8f:$                    82:95:ff:bb:d4:e3:fe:79:0e:01:35:5f:bf:2c:51:$                    c0:f3:17:3b:a5:50:54:10:92:9d:fa:14:8d:01:cb:$                    c7:ae:06:bf:72:fa:75:27:b0:8b:c2:df:4b:01:1f:$                    3c:4c:34:4e:7c:d5:b2:7f:dd:1d:43:e0:01:cf:06:$                    9a:d2:2b:4a:f5:6b:58:47:c4:6a:df:d7:d6:fa:5f:$                    f5:d2:bb:48:fe:48:8f:35:5a:8d:9d:96:32:10:d9:$                    54:15:0c:c2:6d:b8:1e:25:53:0a:24:42:59:40:47:$                    7f:99:c7:4a:4a:f0:d0:00:07:be:a0:96:ab:88:25:$                    39:e2:47:16:0d:d4:bf:59:06:af:fe:59:17:e4:e9:$                    57:d4:af:f9:c0:4a:0e:ee:cd:a9:be:c2:c8:0b:60:$                    f0:19:fa:bb:79:38:49:e1:7c:93:55:7d:b2:53:15:$                    10:dd:ec:92:04:3c:11:c6:7d:46:37:e8:05:db:0d:$                    41:36:76:e9:15:e7:de:22:6e:a1:eb:93:06:64:9a:$                    25:56:85:3a:25:90:37:99:8e:fc:49:dc:26:b1:df:$                    e3:51:e0:40:11:5a:7b:bd:4e:0c:c1:34:68:a1:58:$                    0c:e7:74:4f:9a:ef:a5:c4:93:bb:8f:99:44:a9:c6:$                    1a:e1:43:42:a9:6f:a7:98:46:84:20:8b:6b:bf:5d:$                    e9:a1:7c:68:73:22:51:50:fd:a2:1e:98:95:10:f7:$                    74:4e:c2:30:a2:bf:37:4f:7f:02:72:e9:63:00:33:$                    02:35:76:52:47:28:0f:7e:15:fa:e8:7c:11:47:9a:$                    91:73:d3:7a:b7:17:01:d3:45:89:3b:41:9c:a9:36:$                    f3:f6:a9:41:f4:0d:5d:fc:09:e8:42:9b:e4:b6:99:$                    8d:ad:82:2d:6f:29:32:2c:45:93:fc:f5:52:e8:93:$                    00:bb:b9:ad:be:6c:a4:f2:a0:93:4e:b0:2a:9a:35:$                    2e:b4:9b:8d:91:02:fe:cc:b3:f3:d5:e3:0c:e4:d4:$                    58:36:36:26:37:e4:ef:2f:8b:11:43:e5:6e:4b:35:$                    4d:74:52:7a:b9:53:26:75:8e:4b:9d:13:6b:36:b5:$                    0a:54:7f$                Exponent: 65537 (0x10001)$        X509v3 extensions:$            X509v3 Authority Key Identifier: $                keyid:0F:80:61:1C:82:31:61:D5:2F:28:E7:8D:46:38:B4:2C:E1:C6:D9:E2$$            X509v3 Subject Key Identifier: $                8A:09:E3:9E:31:D0:86:10:96:C6:E4:D9:EF:95:7E:65:0A:6B:4E:1A$            X509v3 Subject Alternative Name: $                DNS:accesopartners.wizink.es$            X509v3 Key Usage: critical$                Digital Signature, Key Encipherment$            X509v3 Extended Key Usage: $                TLS Web Server Authentication, TLS Web Client Authentication$            X509v3 CRL Distribution Points: $$                Full Name:$                  URI:http://crl3.digicert.com/ssca-sha2-g6.crl$$                Full Name:$                  URI:http://crl4.digicert.com/ssca-sha2-g6.crl$$            X509v3 Certificate Policies: $                Policy: 2.16.840.1.114412.1.1$                  CPS: https://www.digicert.com/CPS$                Policy: 2.23.140.1.2.2$$            Authority Information Access: $                OCSP - URI:http://ocsp.digicert.com$                CA Issuers - URI:http://cacerts.digicert.com/DigiCertSHA2SecureServerCA.crt$$            X509v3 Basic Constraints: critical$                CA:FALSE$            CT Precertificate SCTs: $                Signed Certificate Timestamp:$                    Version   : v1(0)$                    Log ID    : A4:B9:09:90:B4:18:58:14:87:BB:13:A2:CC:67:70:0A:$                                3C:35:98:04:F9:1B:DF:B8:E3:77:CD:0E:C8:0D:DC:10$                    Timestamp : Mar 21 13:13:01.979 2018 GMT$                    Extensions: none$                    Signature : ecdsa-with-SHA256$                                30:45:02:20:10:B9:0C:69:1B:85:D8:0E:FE:15:43:27:$                                AB:67:A1:B5:EB:8C:88:CE:A8:CD:ED:D5:29:78:EE:CD:$                                3B:02:45:15:02:21:00:A9:FC:89:95:18:27:16:19:0F:$                                D5:07:34:14:44:47:FB:B3:C0:99:AB:0B:3D:46:34:65:$                                BF:2C:8A:31:F4:D6:E7$                Signed Certificate Timestamp:$                    Version   : v1(0)$                    Log ID    : 6F:53:76:AC:31:F0:31:19:D8:99:00:A4:51:15:FF:77:$                                15:1C:11:D9:02:C1:00:29:06:8D:B2:08:9A:37:D9:13$                    Timestamp : Mar 21 13:13:02.265 2018 GMT$                    Extensions: none$                    Signature : ecdsa-with-SHA256$                                30:45:02:21:00:87:E5:54:07:A1:57:14:90:FD:B0:42:$                                F0:50:07:BB:3C:97:EB:CF:45:FC:3D:8B:EC:FE:9A:51:$                                BB:8E:D0:81:47:02:20:1C:B0:C7:54:60:C9:DD:10:1D:$                                6D:A2:2A:2C:BA:5C:DE:98:83:3B:7D:6B:15:25:B1:4C:$                                33:45:6C:3E:9C:30:B0$                Signed Certificate Timestamp:$                    Version   : v1(0)$                    Log ID    : BB:D9:DF:BC:1F:8A:71:B5:93:94:23:97:AA:92:7B:47:$                                38:57:95:0A:AB:52:E8:1A:90:96:64:36:8E:1E:D1:85$                    Timestamp : Mar 21 13:13:02.227 2018 GMT$                    Extensions: none$                    Signature : ecdsa-with-SHA256$                                30:45:02:21:00:B8:94:2F:81:2A:11:76:44:D7:D5:B1:$                                E4:02:31:BB:C1:30:22:EF:57:FE:EE:63:23:75:4E:81:$                                19:A6:61:B9:13:02:20:1B:5D:8F:34:AD:3C:EC:40:92:$                                CD:B4:FA:2C:12:D8:13:0D:4B:03:D3:2D:A1:7C:E4:B1:$                                4E:8E:2C:FB:49:68:0A$    Signature Algorithm: sha256WithRSAEncryption$         29:82:c2:16:fc:b6:6d:8e:19:07:e3:76:e7:49:dd:26:af:10:$         1c:2c:53:a8:a7:37:5e:d7:7a:57:f0:a1:05:43:2d:69:9f:76:$         46:c4:df:56:fd:bb:cd:04:cd:3f:b3:d8:cf:13:59:a3:c3:a4:$         81:89:b6:c2:ef:59:f7:c9:4c:6c:89:73:28:16:ef:b5:11:d9:$         45:fd:a4:bc:84:32:ab:67:d9:ff:b2:ab:a9:4b:b9:d9:dd:4c:$         72:18:13:1e:32:15:dd:aa:6c:fd:e0:52:b3:9b:aa:ee:81:2c:$         1b:74:dc:00:74:e1:9b:66:45:b6:26:0d:1a:5c:8a:e0:a0:bd:$         db:e6:ce:6f:d2:5d:93:96:d5:37:16:57:75:e7:6c:c4:58:de:$         e1:02:9d:b8:ae:23:22:29:a6:8a:7d:93:da:f8:a9:fc:f4:1f:$         7a:ca:73:23:6e:ce:1c:bb:25:fa:59:20:4d:01:d2:f1:c0:c8:$         b0:8c:33:e9:26:1e:52:d8:3b:2a:62:50:88:cc:97:4d:d9:98:$         b5:60:82:d4:0f:74:fe:69:62:be:fc:a5:7f:f5:7d:ed:88:aa:$         d9:8f:df:61:f2:40:59:72:f7:91:af:df:29:22:fc:5c:0c:75:$         79:0c:af:6c:6c:8b:6c:98:a3:3e:73:dd:2a:b5:c1:40:91:11:$         57:14:b9:e0$
+03/06/2020 13:44:56 [9690] realm is enabled: 
+03/06/2020 13:44:56 [9690] no Content-Length
+03/06/2020 13:44:56 [9690] try to get cookie for the first time: 98 :  SVPNNETWORKCOOKIE=; path=/remote/network; expires=Sun, 11 Mar 1984 12:00:00 GMT; secure; httponly
+03/06/2020 13:44:56 [9690] no Content-Length
+03/06/2020 13:44:56 [9690] cookie: SVPNCOOKIE=5YekdijmZWkafGR+3pawPkqT6HpXKvqpRfBmNwJTaC/BZLe3/JD53Pxy863lRVr8pHjKVIF3xK5zvx7g4fGy80Nar9nan2Lom8cJbLdnNrQtsoYKZhl8LcqUa69vv4X+Ws6+gozTmcf+PPKgiGkSTSberIahNCQbrLWsIpn9ry6PVpKns2jBssUJTwHNwqm+ayNkkJRN+xv/o0da6xPdBmEbVPx+QySWTLC5j49fnLA=
+03/06/2020 13:44:56 [9690] no Content-Length
+03/06/2020 13:44:56 [9690] no Content-Length
+03/06/2020 13:44:56 [9690] 0|212.80.170.130|443|1|10.61.0.0/255.255.0.0,10.58.198.101/255.255.255.255,170.186.103.0/255.255.255.0,170.186.104.0/255.255.255.0,170.186.105.0/255.255.255.0,170.186.106.0/255.255.255.0,10.60.0.0/255.255.0.0,10.62.2.0/255.255.255.0,10.62.3.0/255.255.255.0,10.62.4.0/255.255.255.0|5YekdijmZWkafGR+3pawPkqT6HpXKvqpRfBmNwJTaC/BZLe3/JD53Pxy863lRVr8pHjKVIF3xK5zvx7g4fGy80Nar9nan2Lom8cJbLdnNrQtsoYKZhl8LcqUa69vv4X+Ws6+gozTmcf+PPKgiGkSTSberIahNCQbrLWsIpn9ry6PVpKns2jBssUJTwHNwqm+ayNkkJRN+xv/o0da6xPdBmEbVPx+QySWTLC5j49fnLA=|0
+03/06/2020 13:44:56 [9685] ssl vpn tunnel started
+03/06/2020 13:44:56 [9685] rcv cmd:0 at state[1]
+03/06/2020 13:44:56 [9692] server=212.80.170.130[212.80.170.130] port=443[443] version=1 tunnel=10.61.0.0/255.255.0.0,10.58.198.101/255.255.255.255,170.186.103.0/255.255.255.0,170.186.104.0/255.255.255.0,170.186.105.0/255.255.255.0,170.186.106.0/255.255.255.0,10.60.0.0/255.255.0.0,10.62.2.0/255.255.255.0,10.62.3.0/255.255.255.0,10.62.4.0/255.255.255.0 cookie=5YekdijmZWkafGR+3pawPkqT6HpXKvqpRfBmNwJTaC/BZLe3/JD53Pxy863lRVr8pHjKVIF3xK5zvx7g4fGy80Nar9nan2Lom8cJbLdnNrQtsoYKZhl8LcqUa69vv4X+Ws6+gozTmcf+PPKgiGkSTSberIahNCQbrLWsIpn9ry6PVpKns2jBssUJTwHNwqm+ayNkkJRN+xv/o0da6xPdBmEbVPx+QySWTLC5j49fnLA= exclusive routing: 0
+
+03/06/2020 13:44:56 [9692] starting pppd
+03/06/2020 13:44:56 [9692] use tty:/dev/pts/2
+03/06/2020 13:44:56 [9692] connecting to 212.80.170.130:443
+03/06/2020 13:44:56 [9692] [xml config]: GET /remote/fortisslvpn_xml ... (received 1354 bytes): 
+HTTP/1.1 200 OK
+Date: Fri, 06 Mar 2020 12:44:56 GMT
+Server: xxxxxxxx-xxxxx
+Transfer-Encoding: chunked
+Content-Type: text/xml
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000
+
+<?xml version='1.0' encoding='utf-8'?><sslvpn-tunnel ver='2' dtls='1' patch='1'><dtls-config heartbeat-interval='10' heartbeat-fail-count='10' heartbeat-idle-timeout='10' client-hello-timeout='10' /><tunnel-method value='ppp' /><tunnel-method value='tun' /><fos platform='FG900D' major='5' minor='06' patch='11' build='1700' branch='1700' /><client-config save-password='off' keep-alive='off' auto-connect='off' /><ipv4><assigned-addr ipv4='10.212.134.22' /><split-tunnel-info><addr ip='10.61.0.0' mask='255.255.0.0' /><addr ip='10.58.198.101' mask='255.255.255.255' /><addr ip='170.186.103.0' mask='255.255.255.0' /><addr ip='170.186.104.0' mask='255.255.255.0' /><addr ip='170.186.105.0' mask='255.255.255.0' /><addr ip='170.186.106.0' mask='255.255.255.0' /><addr ip='10.60.0.0' mask='255.255.0.0' /><addr ip='10.62.2.0' mask='255.255.255.0' /><addr ip='10.62.3.0' mask='255.255.255.0' /><addr ip='10.62.4.0' mask='255.255.255.0' /></split-tunnel-info></ipv4><idle-timeout val='3600' /><auth-timeout val='28800' /></sslvpn-tunnel>
+----
+
+03/06/2020 13:44:56 [9692] dns suffix: 
+
+03/06/2020 13:44:56 [9692] xml parsing split tunnel info
+03/06/2020 13:44:56 [9692] xml parse split tunnel info success. Buffer length: 258 bytes
+03/06/2020 13:44:56 [9692] Got local address from ppp, interface will be  up
+03/06/2020 13:44:58 [9692] ppp interface is up
+03/06/2020 13:44:58 [9692] run_scutil 212.80.170.130 0 0...
+03/06/2020 13:44:58 [9692] write argument OK.
+Generating pppd.resolv.conf...Done
+03/06/2020 13:44:59 [9719] begin sysconfig linux
+03/06/2020 13:44:59 [9719] Gateway to FGT: 10.9.1.254
+03/06/2020 13:44:59 [9719] delete route 1.1.1.1
+03/06/2020 13:44:59 [9719] Add the route for 212.80.170.130(10.9.1.254)
+03/06/2020 13:44:59 [9719] Setup split tunnel
+03/06/2020 13:44:59 [9719] route -n add -net 10.61.0.0 netmask 255.255.0.0 gw 10.212.134.22 dev ppp0
+03/06/2020 13:44:59 [9719] route -n add -net 10.58.198.101 netmask 255.255.255.255 gw 10.212.134.22 dev ppp0
+03/06/2020 13:44:59 [9719] route -n add -net 170.186.103.0 netmask 255.255.255.0 gw 10.212.134.22 dev ppp0
+03/06/2020 13:44:59 [9719] route -n add -net 170.186.104.0 netmask 255.255.255.0 gw 10.212.134.22 dev ppp0
+03/06/2020 13:44:59 [9719] route -n add -net 170.186.105.0 netmask 255.255.255.0 gw 10.212.134.22 dev ppp0
+03/06/2020 13:44:59 [9719] route -n add -net 170.186.106.0 netmask 255.255.255.0 gw 10.212.134.22 dev ppp0
+03/06/2020 13:44:59 [9719] route -n add -net 10.60.0.0 netmask 255.255.0.0 gw 10.212.134.22 dev ppp0
+03/06/2020 13:44:59 [9719] route -n add -net 10.62.2.0 netmask 255.255.255.0 gw 10.212.134.22 dev ppp0
+03/06/2020 13:44:59 [9719] route -n add -net 10.62.3.0 netmask 255.255.255.0 gw 10.212.134.22 dev ppp0
+03/06/2020 13:44:59 [9719] route -n add -net 10.62.4.0 netmask 255.255.255.0 gw 10.212.134.22 dev ppp0
+03/07/2020 10:01:41 [6575] set the loglevel to 1
+03/07/2020 10:01:41 [6580] set the loglevel to 1
+03/07/2020 10:01:41 [6580] sslvpn connection version:4.0.2332
+03/07/2020 10:01:41 [6580] rcv cmd:0 at state[0]
+03/07/2020 10:01:41 [6580] starting ssl vpn tunnel[4.0.2332]
+03/07/2020 10:01:41 [6584] route backup START
+03/07/2020 10:01:41 [6584] route backup DONE
+03/07/2020 10:01:41 [6585] execl /opt/forticlient-sslvpn/64bit/helper/get_fortisslvpn_info /opt/forticlient-sslvpn/64bit/helper 212.80.170.130 443   ...
+03/07/2020 10:01:41 [6585] trusted CA dir: /home/jose/.fctsslvpn_trustca
+03/07/2020 10:01:41 [6585] set loglevel to 1
+03/07/2020 10:01:41 [6585] Peer's certificate is not valid. action is 1
+03/07/2020 10:01:41 [6585] peer's certificate: 
+Certificate:$    Data:$        Version: 3 (0x2)$        Serial Number:$            0c:2e:8e:e3:42:4c:3f:5b:4b:f6:18:07:c6:da:c5:3d$    Signature Algorithm: sha256WithRSAEncryption$        Issuer: C=US, O=DigiCert Inc, CN=DigiCert SHA2 Secure Server CA$        Validity$            Not Before: Mar 21 00:00:00 2018 GMT$            Not After : Mar 25 12:00:00 2020 GMT$        Subject: C=ES, L=Madrid, O=WIZINK BANK, S.A., OU=WIZINK BANK SA., CN=accesopartners.wizink.es$        Subject Public Key Info:$            Public Key Algorithm: rsaEncryption$                Public-Key: (4096 bit)$                Modulus:$                    00:c7:ff:c7:df:b7:fe:f8:c5:1e:f9:c5:cb:f7:44:$                    66:27:8d:eb:d0:06:84:4c:30:9e:de:bf:e1:ab:bb:$                    30:aa:81:e6:7f:79:e9:5c:07:19:23:ea:6f:d0:9f:$                    2a:e8:58:2c:fe:7d:f6:52:1f:75:a5:4d:97:a5:a9:$                    d0:ca:1b:9b:96:c0:f2:4a:26:24:49:61:de:bc:74:$                    12:67:37:ac:50:1f:bc:ba:15:af:b8:33:62:4c:84:$                    7e:d3:0d:1b:88:37:7a:2c:0d:62:7c:ca:54:0b:8f:$                    82:95:ff:bb:d4:e3:fe:79:0e:01:35:5f:bf:2c:51:$                    c0:f3:17:3b:a5:50:54:10:92:9d:fa:14:8d:01:cb:$                    c7:ae:06:bf:72:fa:75:27:b0:8b:c2:df:4b:01:1f:$                    3c:4c:34:4e:7c:d5:b2:7f:dd:1d:43:e0:01:cf:06:$                    9a:d2:2b:4a:f5:6b:58:47:c4:6a:df:d7:d6:fa:5f:$                    f5:d2:bb:48:fe:48:8f:35:5a:8d:9d:96:32:10:d9:$                    54:15:0c:c2:6d:b8:1e:25:53:0a:24:42:59:40:47:$                    7f:99:c7:4a:4a:f0:d0:00:07:be:a0:96:ab:88:25:$                    39:e2:47:16:0d:d4:bf:59:06:af:fe:59:17:e4:e9:$                    57:d4:af:f9:c0:4a:0e:ee:cd:a9:be:c2:c8:0b:60:$                    f0:19:fa:bb:79:38:49:e1:7c:93:55:7d:b2:53:15:$                    10:dd:ec:92:04:3c:11:c6:7d:46:37:e8:05:db:0d:$                    41:36:76:e9:15:e7:de:22:6e:a1:eb:93:06:64:9a:$                    25:56:85:3a:25:90:37:99:8e:fc:49:dc:26:b1:df:$                    e3:51:e0:40:11:5a:7b:bd:4e:0c:c1:34:68:a1:58:$                    0c:e7:74:4f:9a:ef:a5:c4:93:bb:8f:99:44:a9:c6:$                    1a:e1:43:42:a9:6f:a7:98:46:84:20:8b:6b:bf:5d:$                    e9:a1:7c:68:73:22:51:50:fd:a2:1e:98:95:10:f7:$                    74:4e:c2:30:a2:bf:37:4f:7f:02:72:e9:63:00:33:$                    02:35:76:52:47:28:0f:7e:15:fa:e8:7c:11:47:9a:$                    91:73:d3:7a:b7:17:01:d3:45:89:3b:41:9c:a9:36:$                    f3:f6:a9:41:f4:0d:5d:fc:09:e8:42:9b:e4:b6:99:$                    8d:ad:82:2d:6f:29:32:2c:45:93:fc:f5:52:e8:93:$                    00:bb:b9:ad:be:6c:a4:f2:a0:93:4e:b0:2a:9a:35:$                    2e:b4:9b:8d:91:02:fe:cc:b3:f3:d5:e3:0c:e4:d4:$                    58:36:36:26:37:e4:ef:2f:8b:11:43:e5:6e:4b:35:$                    4d:74:52:7a:b9:53:26:75:8e:4b:9d:13:6b:36:b5:$                    0a:54:7f$                Exponent: 65537 (0x10001)$        X509v3 extensions:$            X509v3 Authority Key Identifier: $                keyid:0F:80:61:1C:82:31:61:D5:2F:28:E7:8D:46:38:B4:2C:E1:C6:D9:E2$$            X509v3 Subject Key Identifier: $                8A:09:E3:9E:31:D0:86:10:96:C6:E4:D9:EF:95:7E:65:0A:6B:4E:1A$            X509v3 Subject Alternative Name: $                DNS:accesopartners.wizink.es$            X509v3 Key Usage: critical$                Digital Signature, Key Encipherment$            X509v3 Extended Key Usage: $                TLS Web Server Authentication, TLS Web Client Authentication$            X509v3 CRL Distribution Points: $$                Full Name:$                  URI:http://crl3.digicert.com/ssca-sha2-g6.crl$$                Full Name:$                  URI:http://crl4.digicert.com/ssca-sha2-g6.crl$$            X509v3 Certificate Policies: $                Policy: 2.16.840.1.114412.1.1$                  CPS: https://www.digicert.com/CPS$                Policy: 2.23.140.1.2.2$$            Authority Information Access: $                OCSP - URI:http://ocsp.digicert.com$                CA Issuers - URI:http://cacerts.digicert.com/DigiCertSHA2SecureServerCA.crt$$            X509v3 Basic Constraints: critical$                CA:FALSE$            CT Precertificate SCTs: $                Signed Certificate Timestamp:$                    Version   : v1(0)$                    Log ID    : A4:B9:09:90:B4:18:58:14:87:BB:13:A2:CC:67:70:0A:$                                3C:35:98:04:F9:1B:DF:B8:E3:77:CD:0E:C8:0D:DC:10$                    Timestamp : Mar 21 13:13:01.979 2018 GMT$                    Extensions: none$                    Signature : ecdsa-with-SHA256$                                30:45:02:20:10:B9:0C:69:1B:85:D8:0E:FE:15:43:27:$                                AB:67:A1:B5:EB:8C:88:CE:A8:CD:ED:D5:29:78:EE:CD:$                                3B:02:45:15:02:21:00:A9:FC:89:95:18:27:16:19:0F:$                                D5:07:34:14:44:47:FB:B3:C0:99:AB:0B:3D:46:34:65:$                                BF:2C:8A:31:F4:D6:E7$                Signed Certificate Timestamp:$                    Version   : v1(0)$                    Log ID    : 6F:53:76:AC:31:F0:31:19:D8:99:00:A4:51:15:FF:77:$                                15:1C:11:D9:02:C1:00:29:06:8D:B2:08:9A:37:D9:13$                    Timestamp : Mar 21 13:13:02.265 2018 GMT$                    Extensions: none$                    Signature : ecdsa-with-SHA256$                                30:45:02:21:00:87:E5:54:07:A1:57:14:90:FD:B0:42:$                                F0:50:07:BB:3C:97:EB:CF:45:FC:3D:8B:EC:FE:9A:51:$                                BB:8E:D0:81:47:02:20:1C:B0:C7:54:60:C9:DD:10:1D:$                                6D:A2:2A:2C:BA:5C:DE:98:83:3B:7D:6B:15:25:B1:4C:$                                33:45:6C:3E:9C:30:B0$                Signed Certificate Timestamp:$                    Version   : v1(0)$                    Log ID    : BB:D9:DF:BC:1F:8A:71:B5:93:94:23:97:AA:92:7B:47:$                                38:57:95:0A:AB:52:E8:1A:90:96:64:36:8E:1E:D1:85$                    Timestamp : Mar 21 13:13:02.227 2018 GMT$                    Extensions: none$                    Signature : ecdsa-with-SHA256$                                30:45:02:21:00:B8:94:2F:81:2A:11:76:44:D7:D5:B1:$                                E4:02:31:BB:C1:30:22:EF:57:FE:EE:63:23:75:4E:81:$                                19:A6:61:B9:13:02:20:1B:5D:8F:34:AD:3C:EC:40:92:$                                CD:B4:FA:2C:12:D8:13:0D:4B:03:D3:2D:A1:7C:E4:B1:$                                4E:8E:2C:FB:49:68:0A$    Signature Algorithm: sha256WithRSAEncryption$         29:82:c2:16:fc:b6:6d:8e:19:07:e3:76:e7:49:dd:26:af:10:$         1c:2c:53:a8:a7:37:5e:d7:7a:57:f0:a1:05:43:2d:69:9f:76:$         46:c4:df:56:fd:bb:cd:04:cd:3f:b3:d8:cf:13:59:a3:c3:a4:$         81:89:b6:c2:ef:59:f7:c9:4c:6c:89:73:28:16:ef:b5:11:d9:$         45:fd:a4:bc:84:32:ab:67:d9:ff:b2:ab:a9:4b:b9:d9:dd:4c:$         72:18:13:1e:32:15:dd:aa:6c:fd:e0:52:b3:9b:aa:ee:81:2c:$         1b:74:dc:00:74:e1:9b:66:45:b6:26:0d:1a:5c:8a:e0:a0:bd:$         db:e6:ce:6f:d2:5d:93:96:d5:37:16:57:75:e7:6c:c4:58:de:$         e1:02:9d:b8:ae:23:22:29:a6:8a:7d:93:da:f8:a9:fc:f4:1f:$         7a:ca:73:23:6e:ce:1c:bb:25:fa:59:20:4d:01:d2:f1:c0:c8:$         b0:8c:33:e9:26:1e:52:d8:3b:2a:62:50:88:cc:97:4d:d9:98:$         b5:60:82:d4:0f:74:fe:69:62:be:fc:a5:7f:f5:7d:ed:88:aa:$         d9:8f:df:61:f2:40:59:72:f7:91:af:df:29:22:fc:5c:0c:75:$         79:0c:af:6c:6c:8b:6c:98:a3:3e:73:dd:2a:b5:c1:40:91:11:$         57:14:b9:e0$
+03/07/2020 10:01:41 [6585] realm is enabled: 
+03/07/2020 10:01:41 [6585] no Content-Length
+03/07/2020 10:01:41 [6585] try to get cookie for the first time: 98 :  SVPNNETWORKCOOKIE=; path=/remote/network; expires=Sun, 11 Mar 1984 12:00:00 GMT; secure; httponly
+03/07/2020 10:01:41 [6585] no Content-Length
+03/07/2020 10:01:41 [6585] cookie: SVPNCOOKIE=x9L3fulA8yFPgncy29WoGhXffXjx8EqYO5icmEh6sy3q0YRYWWHfHPFRIW0Ur1Tp0RSs3j6niXhesEmKhvW3Smb3uu8akaOZkK77xxQhkuNd9r4CyVYsBgFQTxnGBdv2hYvRDcQOv2Oxo1qMqxDTSqm6cNzDXicaLwMQxWuVoxFos45u/kcQ3IxEwYDK6yhW0SxpCuYVkWzArPXIxpxzwm0vosh8mhBRkYzBKh2RdkU=
+03/07/2020 10:01:41 [6585] no Content-Length
+03/07/2020 10:01:41 [6585] no Content-Length
+03/07/2020 10:01:41 [6585] 0|212.80.170.130|443|1|10.61.0.0/255.255.0.0,10.58.198.101/255.255.255.255,170.186.103.0/255.255.255.0,170.186.104.0/255.255.255.0,170.186.105.0/255.255.255.0,170.186.106.0/255.255.255.0,10.60.0.0/255.255.0.0,10.62.2.0/255.255.255.0,10.62.3.0/255.255.255.0,10.62.4.0/255.255.255.0|x9L3fulA8yFPgncy29WoGhXffXjx8EqYO5icmEh6sy3q0YRYWWHfHPFRIW0Ur1Tp0RSs3j6niXhesEmKhvW3Smb3uu8akaOZkK77xxQhkuNd9r4CyVYsBgFQTxnGBdv2hYvRDcQOv2Oxo1qMqxDTSqm6cNzDXicaLwMQxWuVoxFos45u/kcQ3IxEwYDK6yhW0SxpCuYVkWzArPXIxpxzwm0vosh8mhBRkYzBKh2RdkU=|0
+03/07/2020 10:01:41 [6580] ssl vpn tunnel started
+03/07/2020 10:01:41 [6580] rcv cmd:0 at state[1]
+03/07/2020 10:01:41 [6587] server=212.80.170.130[212.80.170.130] port=443[443] version=1 tunnel=10.61.0.0/255.255.0.0,10.58.198.101/255.255.255.255,170.186.103.0/255.255.255.0,170.186.104.0/255.255.255.0,170.186.105.0/255.255.255.0,170.186.106.0/255.255.255.0,10.60.0.0/255.255.0.0,10.62.2.0/255.255.255.0,10.62.3.0/255.255.255.0,10.62.4.0/255.255.255.0 cookie=x9L3fulA8yFPgncy29WoGhXffXjx8EqYO5icmEh6sy3q0YRYWWHfHPFRIW0Ur1Tp0RSs3j6niXhesEmKhvW3Smb3uu8akaOZkK77xxQhkuNd9r4CyVYsBgFQTxnGBdv2hYvRDcQOv2Oxo1qMqxDTSqm6cNzDXicaLwMQxWuVoxFos45u/kcQ3IxEwYDK6yhW0SxpCuYVkWzArPXIxpxzwm0vosh8mhBRkYzBKh2RdkU= exclusive routing: 0
+
+03/07/2020 10:01:41 [6587] starting pppd
+03/07/2020 10:01:41 [6587] use tty:/dev/pts/3
+03/07/2020 10:01:41 [6587] connecting to 212.80.170.130:443
+03/07/2020 10:01:41 [6587] [xml config]: GET /remote/fortisslvpn_xml ... (received 1353 bytes): 
+HTTP/1.1 200 OK
+Date: Sat, 07 Mar 2020 09:01:41 GMT
+Server: xxxxxxxx-xxxxx
+Transfer-Encoding: chunked
+Content-Type: text/xml
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000
+
+<?xml version='1.0' encoding='utf-8'?><sslvpn-tunnel ver='2' dtls='1' patch='1'><dtls-config heartbeat-interval='10' heartbeat-fail-count='10' heartbeat-idle-timeout='10' client-hello-timeout='10' /><tunnel-method value='ppp' /><tunnel-method value='tun' /><fos platform='FG900D' major='5' minor='06' patch='11' build='1700' branch='1700' /><client-config save-password='off' keep-alive='off' auto-connect='off' /><ipv4><assigned-addr ipv4='10.212.134.4' /><split-tunnel-info><addr ip='10.61.0.0' mask='255.255.0.0' /><addr ip='10.58.198.101' mask='255.255.255.255' /><addr ip='170.186.103.0' mask='255.255.255.0' /><addr ip='170.186.104.0' mask='255.255.255.0' /><addr ip='170.186.105.0' mask='255.255.255.0' /><addr ip='170.186.106.0' mask='255.255.255.0' /><addr ip='10.60.0.0' mask='255.255.0.0' /><addr ip='10.62.2.0' mask='255.255.255.0' /><addr ip='10.62.3.0' mask='255.255.255.0' /><addr ip='10.62.4.0' mask='255.255.255.0' /></split-tunnel-info></ipv4><idle-timeout val='3600' /><auth-timeout val='28800' /></sslvpn-tunnel>
+----
+
+03/07/2020 10:01:41 [6587] dns suffix: 
+
+03/07/2020 10:01:41 [6587] xml parsing split tunnel info
+03/07/2020 10:01:41 [6587] xml parse split tunnel info success. Buffer length: 258 bytes
+03/07/2020 10:01:42 [6587] Got local address from ppp, interface will be  up
+03/07/2020 10:01:43 [6587] ppp interface is up
+03/07/2020 10:01:43 [6587] run_scutil 212.80.170.130 0 0...
+03/07/2020 10:01:43 [6587] write argument OK.
+Generating pppd.resolv.conf...Done
+03/07/2020 10:01:44 [6639] begin sysconfig linux
+03/07/2020 10:01:44 [6639] Gateway to FGT: 192.168.1.1
+03/07/2020 10:01:44 [6639] delete route 1.1.1.1
+03/07/2020 10:01:44 [6639] Add the route for 212.80.170.130(192.168.1.1)
+03/07/2020 10:01:44 [6639] Setup split tunnel
+03/07/2020 10:01:44 [6639] route -n add -net 10.61.0.0 netmask 255.255.0.0 gw 10.212.134.4 dev ppp0
+03/07/2020 10:01:44 [6639] route -n add -net 10.58.198.101 netmask 255.255.255.255 gw 10.212.134.4 dev ppp0
+03/07/2020 10:01:44 [6639] route -n add -net 170.186.103.0 netmask 255.255.255.0 gw 10.212.134.4 dev ppp0
+03/07/2020 10:01:44 [6639] route -n add -net 170.186.104.0 netmask 255.255.255.0 gw 10.212.134.4 dev ppp0
+03/07/2020 10:01:44 [6639] route -n add -net 170.186.105.0 netmask 255.255.255.0 gw 10.212.134.4 dev ppp0
+03/07/2020 10:01:44 [6639] route -n add -net 170.186.106.0 netmask 255.255.255.0 gw 10.212.134.4 dev ppp0
+03/07/2020 10:01:44 [6639] route -n add -net 10.60.0.0 netmask 255.255.0.0 gw 10.212.134.4 dev ppp0
+03/07/2020 10:01:44 [6639] route -n add -net 10.62.2.0 netmask 255.255.255.0 gw 10.212.134.4 dev ppp0
+03/07/2020 10:01:44 [6639] route -n add -net 10.62.3.0 netmask 255.255.255.0 gw 10.212.134.4 dev ppp0
+03/07/2020 10:01:44 [6639] route -n add -net 10.62.4.0 netmask 255.255.255.0 gw 10.212.134.4 dev ppp0
+03/07/2020 18:01:43 [6587] ssl read failed[error:00000005:lib(0):func(0):DH lib]:[Success]
+03/07/2020 18:01:43 [6587] io finished, kill pppd
+03/07/2020 18:01:43 [6580] select: Interrupted system call
+03/07/2020 18:01:43 [6587] kill_child:6589
+03/07/2020 18:01:43 [6580] rcv cmd:1 at state[1]
+03/07/2020 18:01:43 [6580] stopping ssl vpn tunnel[v4.0.2332]
+03/07/2020 18:01:43 [6580] kill_child:6587
+03/07/2020 18:01:43 [6580] kill_child:6585
+03/07/2020 18:01:43 [6587] killing pppd ...
+03/07/2020 18:01:43 [6587] kill_child:6639
+03/07/2020 18:01:43 [6585] signal rcved, logout now
+03/07/2020 18:01:43 [6580] tunnel terminated
+03/07/2020 18:01:43 [13775] begin cleanup linux...
+03/07/2020 18:01:43 [13775] restore /etc/resolv.conf
+03/07/2020 18:01:43 [13775] clean up route...
+03/07/2020 18:01:43 [6575] set the loglevel to 1
+03/07/2020 18:01:43 [13777] set the loglevel to 1
+03/07/2020 18:01:43 [13777] sslvpn connection version:4.0.2332
+03/07/2020 18:01:43 [13777] rcv cmd:0 at state[0]
+03/07/2020 18:01:43 [13777] starting ssl vpn tunnel[4.0.2332]
+03/07/2020 18:01:43 [13775] truncate pppd.log
+03/07/2020 18:01:43 [13786] route backup START
+03/07/2020 18:01:43 [13786] route backup DONE
+03/07/2020 18:01:43 [13802] execl /opt/forticlient-sslvpn/64bit/helper/get_fortisslvpn_info /opt/forticlient-sslvpn/64bit/helper 212.80.170.130 443   ...
+03/07/2020 18:01:43 [13802] trusted CA dir: /home/jose/.fctsslvpn_trustca
+03/07/2020 18:01:43 [13802] set loglevel to 1
+03/07/2020 18:01:43 [13775] truncate forticlientsslvpn.log
+03/07/2020 18:01:43 [6580] ssl vpn tunnel stopped
+03/07/2020 18:01:43 [6580] rcv cmd:2 at state[0]
+03/07/2020 18:01:43 [13802] Peer's certificate is not valid. action is 1
+03/07/2020 18:01:43 [13802] peer's certificate: 
+Certificate:$    Data:$        Version: 3 (0x2)$        Serial Number:$            0c:2e:8e:e3:42:4c:3f:5b:4b:f6:18:07:c6:da:c5:3d$    Signature Algorithm: sha256WithRSAEncryption$        Issuer: C=US, O=DigiCert Inc, CN=DigiCert SHA2 Secure Server CA$        Validity$            Not Before: Mar 21 00:00:00 2018 GMT$            Not After : Mar 25 12:00:00 2020 GMT$        Subject: C=ES, L=Madrid, O=WIZINK BANK, S.A., OU=WIZINK BANK SA., CN=accesopartners.wizink.es$        Subject Public Key Info:$            Public Key Algorithm: rsaEncryption$                Public-Key: (4096 bit)$                Modulus:$                    00:c7:ff:c7:df:b7:fe:f8:c5:1e:f9:c5:cb:f7:44:$                    66:27:8d:eb:d0:06:84:4c:30:9e:de:bf:e1:ab:bb:$                    30:aa:81:e6:7f:79:e9:5c:07:19:23:ea:6f:d0:9f:$                    2a:e8:58:2c:fe:7d:f6:52:1f:75:a5:4d:97:a5:a9:$                    d0:ca:1b:9b:96:c0:f2:4a:26:24:49:61:de:bc:74:$                    12:67:37:ac:50:1f:bc:ba:15:af:b8:33:62:4c:84:$                    7e:d3:0d:1b:88:37:7a:2c:0d:62:7c:ca:54:0b:8f:$                    82:95:ff:bb:d4:e3:fe:79:0e:01:35:5f:bf:2c:51:$                    c0:f3:17:3b:a5:50:54:10:92:9d:fa:14:8d:01:cb:$                    c7:ae:06:bf:72:fa:75:27:b0:8b:c2:df:4b:01:1f:$                    3c:4c:34:4e:7c:d5:b2:7f:dd:1d:43:e0:01:cf:06:$                    9a:d2:2b:4a:f5:6b:58:47:c4:6a:df:d7:d6:fa:5f:$                    f5:d2:bb:48:fe:48:8f:35:5a:8d:9d:96:32:10:d9:$                    54:15:0c:c2:6d:b8:1e:25:53:0a:24:42:59:40:47:$                    7f:99:c7:4a:4a:f0:d0:00:07:be:a0:96:ab:88:25:$                    39:e2:47:16:0d:d4:bf:59:06:af:fe:59:17:e4:e9:$                    57:d4:af:f9:c0:4a:0e:ee:cd:a9:be:c2:c8:0b:60:$                    f0:19:fa:bb:79:38:49:e1:7c:93:55:7d:b2:53:15:$                    10:dd:ec:92:04:3c:11:c6:7d:46:37:e8:05:db:0d:$                    41:36:76:e9:15:e7:de:22:6e:a1:eb:93:06:64:9a:$                    25:56:85:3a:25:90:37:99:8e:fc:49:dc:26:b1:df:$                    e3:51:e0:40:11:5a:7b:bd:4e:0c:c1:34:68:a1:58:$                    0c:e7:74:4f:9a:ef:a5:c4:93:bb:8f:99:44:a9:c6:$                    1a:e1:43:42:a9:6f:a7:98:46:84:20:8b:6b:bf:5d:$                    e9:a1:7c:68:73:22:51:50:fd:a2:1e:98:95:10:f7:$                    74:4e:c2:30:a2:bf:37:4f:7f:02:72:e9:63:00:33:$                    02:35:76:52:47:28:0f:7e:15:fa:e8:7c:11:47:9a:$                    91:73:d3:7a:b7:17:01:d3:45:89:3b:41:9c:a9:36:$                    f3:f6:a9:41:f4:0d:5d:fc:09:e8:42:9b:e4:b6:99:$                    8d:ad:82:2d:6f:29:32:2c:45:93:fc:f5:52:e8:93:$                    00:bb:b9:ad:be:6c:a4:f2:a0:93:4e:b0:2a:9a:35:$                    2e:b4:9b:8d:91:02:fe:cc:b3:f3:d5:e3:0c:e4:d4:$                    58:36:36:26:37:e4:ef:2f:8b:11:43:e5:6e:4b:35:$                    4d:74:52:7a:b9:53:26:75:8e:4b:9d:13:6b:36:b5:$                    0a:54:7f$                Exponent: 65537 (0x10001)$        X509v3 extensions:$            X509v3 Authority Key Identifier: $                keyid:0F:80:61:1C:82:31:61:D5:2F:28:E7:8D:46:38:B4:2C:E1:C6:D9:E2$$            X509v3 Subject Key Identifier: $                8A:09:E3:9E:31:D0:86:10:96:C6:E4:D9:EF:95:7E:65:0A:6B:4E:1A$            X509v3 Subject Alternative Name: $                DNS:accesopartners.wizink.es$            X509v3 Key Usage: critical$                Digital Signature, Key Encipherment$            X509v3 Extended Key Usage: $                TLS Web Server Authentication, TLS Web Client Authentication$            X509v3 CRL Distribution Points: $$                Full Name:$                  URI:http://crl3.digicert.com/ssca-sha2-g6.crl$$                Full Name:$                  URI:http://crl4.digicert.com/ssca-sha2-g6.crl$$            X509v3 Certificate Policies: $                Policy: 2.16.840.1.114412.1.1$                  CPS: https://www.digicert.com/CPS$                Policy: 2.23.140.1.2.2$$            Authority Information Access: $                OCSP - URI:http://ocsp.digicert.com$                CA Issuers - URI:http://cacerts.digicert.com/DigiCertSHA2SecureServerCA.crt$$            X509v3 Basic Constraints: critical$                CA:FALSE$            CT Precertificate SCTs: $                Signed Certificate Timestamp:$                    Version   : v1(0)$                    Log ID    : A4:B9:09:90:B4:18:58:14:87:BB:13:A2:CC:67:70:0A:$                                3C:35:98:04:F9:1B:DF:B8:E3:77:CD:0E:C8:0D:DC:10$                    Timestamp : Mar 21 13:13:01.979 2018 GMT$                    Extensions: none$                    Signature : ecdsa-with-SHA256$                                30:45:02:20:10:B9:0C:69:1B:85:D8:0E:FE:15:43:27:$                                AB:67:A1:B5:EB:8C:88:CE:A8:CD:ED:D5:29:78:EE:CD:$                                3B:02:45:15:02:21:00:A9:FC:89:95:18:27:16:19:0F:$                                D5:07:34:14:44:47:FB:B3:C0:99:AB:0B:3D:46:34:65:$                                BF:2C:8A:31:F4:D6:E7$                Signed Certificate Timestamp:$                    Version   : v1(0)$                    Log ID    : 6F:53:76:AC:31:F0:31:19:D8:99:00:A4:51:15:FF:77:$                                15:1C:11:D9:02:C1:00:29:06:8D:B2:08:9A:37:D9:13$                    Timestamp : Mar 21 13:13:02.265 2018 GMT$                    Extensions: none$                    Signature : ecdsa-with-SHA256$                                30:45:02:21:00:87:E5:54:07:A1:57:14:90:FD:B0:42:$                                F0:50:07:BB:3C:97:EB:CF:45:FC:3D:8B:EC:FE:9A:51:$                                BB:8E:D0:81:47:02:20:1C:B0:C7:54:60:C9:DD:10:1D:$                                6D:A2:2A:2C:BA:5C:DE:98:83:3B:7D:6B:15:25:B1:4C:$                                33:45:6C:3E:9C:30:B0$                Signed Certificate Timestamp:$                    Version   : v1(0)$                    Log ID    : BB:D9:DF:BC:1F:8A:71:B5:93:94:23:97:AA:92:7B:47:$                                38:57:95:0A:AB:52:E8:1A:90:96:64:36:8E:1E:D1:85$                    Timestamp : Mar 21 13:13:02.227 2018 GMT$                    Extensions: none$                    Signature : ecdsa-with-SHA256$                                30:45:02:21:00:B8:94:2F:81:2A:11:76:44:D7:D5:B1:$                                E4:02:31:BB:C1:30:22:EF:57:FE:EE:63:23:75:4E:81:$                                19:A6:61:B9:13:02:20:1B:5D:8F:34:AD:3C:EC:40:92:$                                CD:B4:FA:2C:12:D8:13:0D:4B:03:D3:2D:A1:7C:E4:B1:$                                4E:8E:2C:FB:49:68:0A$    Signature Algorithm: sha256WithRSAEncryption$         29:82:c2:16:fc:b6:6d:8e:19:07:e3:76:e7:49:dd:26:af:10:$         1c:2c:53:a8:a7:37:5e:d7:7a:57:f0:a1:05:43:2d:69:9f:76:$         46:c4:df:56:fd:bb:cd:04:cd:3f:b3:d8:cf:13:59:a3:c3:a4:$         81:89:b6:c2:ef:59:f7:c9:4c:6c:89:73:28:16:ef:b5:11:d9:$         45:fd:a4:bc:84:32:ab:67:d9:ff:b2:ab:a9:4b:b9:d9:dd:4c:$         72:18:13:1e:32:15:dd:aa:6c:fd:e0:52:b3:9b:aa:ee:81:2c:$         1b:74:dc:00:74:e1:9b:66:45:b6:26:0d:1a:5c:8a:e0:a0:bd:$         db:e6:ce:6f:d2:5d:93:96:d5:37:16:57:75:e7:6c:c4:58:de:$         e1:02:9d:b8:ae:23:22:29:a6:8a:7d:93:da:f8:a9:fc:f4:1f:$         7a:ca:73:23:6e:ce:1c:bb:25:fa:59:20:4d:01:d2:f1:c0:c8:$         b0:8c:33:e9:26:1e:52:d8:3b:2a:62:50:88:cc:97:4d:d9:98:$         b5:60:82:d4:0f:74:fe:69:62:be:fc:a5:7f:f5:7d:ed:88:aa:$         d9:8f:df:61:f2:40:59:72:f7:91:af:df:29:22:fc:5c:0c:75:$         79:0c:af:6c:6c:8b:6c:98:a3:3e:73:dd:2a:b5:c1:40:91:11:$         57:14:b9:e0$
+03/07/2020 18:01:43 [13802] realm is enabled: 
+03/07/2020 18:01:43 [13802] no Content-Length
+03/07/2020 18:01:43 [13802] try to get cookie for the first time: 98 :  SVPNNETWORKCOOKIE=; path=/remote/network; expires=Sun, 11 Mar 1984 12:00:00 GMT; secure; httponly
+03/07/2020 18:01:43 [13802] no Content-Length
+03/07/2020 18:01:43 [13802] cookie: SVPNCOOKIE=1mGUWUlCnx20gFpfPzm9IA5fXmb0YnGAcUI4phEiUFT7KZQynxHNzGdW9tQWtR/2eg7og4uErUcbcKXOSEGfstoOWLksx+Cb0RfW6EgEPaQIe08F4VhiTVML0AGiSHcBIk9fUmYgiOIdRb3ofR3kpwOzR1ww/M4uBorNeyjrF5EPXSw9l4sW9eAZJudSOrTs7tNzQ1ptpg8/OdUz0PyNyj4uyLCwLuM/bYNEK5vZlA8=
+03/07/2020 18:01:43 [13802] no Content-Length
+03/07/2020 18:01:43 [13802] no Content-Length
+03/07/2020 18:01:43 [13802] 0|212.80.170.130|443|1|10.61.0.0/255.255.0.0,10.58.198.101/255.255.255.255,170.186.103.0/255.255.255.0,170.186.104.0/255.255.255.0,170.186.105.0/255.255.255.0,170.186.106.0/255.255.255.0,10.60.0.0/255.255.0.0,10.62.2.0/255.255.255.0,10.62.3.0/255.255.255.0,10.62.4.0/255.255.255.0|1mGUWUlCnx20gFpfPzm9IA5fXmb0YnGAcUI4phEiUFT7KZQynxHNzGdW9tQWtR/2eg7og4uErUcbcKXOSEGfstoOWLksx+Cb0RfW6EgEPaQIe08F4VhiTVML0AGiSHcBIk9fUmYgiOIdRb3ofR3kpwOzR1ww/M4uBorNeyjrF5EPXSw9l4sW9eAZJudSOrTs7tNzQ1ptpg8/OdUz0PyNyj4uyLCwLuM/bYNEK5vZlA8=|0
+03/07/2020 18:01:43 [13777] ssl vpn tunnel started
+03/07/2020 18:01:43 [13817] server=212.80.170.130[212.80.170.130] port=443[443] version=1 tunnel=10.61.0.0/255.255.0.0,10.58.198.101/255.255.255.255,170.186.103.0/255.255.255.0,170.186.104.0/255.255.255.0,170.186.105.0/255.255.255.0,170.186.106.0/255.255.255.0,10.60.0.0/255.255.0.0,10.62.2.0/255.255.255.0,10.62.3.0/255.255.255.0,10.62.4.0/255.255.255.0 cookie=1mGUWUlCnx20gFpfPzm9IA5fXmb0YnGAcUI4phEiUFT7KZQynxHNzGdW9tQWtR/2eg7og4uErUcbcKXOSEGfstoOWLksx+Cb0RfW6EgEPaQIe08F4VhiTVML0AGiSHcBIk9fUmYgiOIdRb3ofR3kpwOzR1ww/M4uBorNeyjrF5EPXSw9l4sW9eAZJudSOrTs7tNzQ1ptpg8/OdUz0PyNyj4uyLCwLuM/bYNEK5vZlA8= exclusive routing: 0
+
+03/07/2020 18:01:43 [13817] starting pppd
+03/07/2020 18:01:43 [13817] use tty:/dev/pts/3
+03/07/2020 18:01:43 [13817] connecting to 212.80.170.130:443
+03/07/2020 18:01:43 [13817] [xml config]: GET /remote/fortisslvpn_xml ... (received 1353 bytes): 
+HTTP/1.1 200 OK
+Date: Sat, 07 Mar 2020 17:01:43 GMT
+Server: xxxxxxxx-xxxxx
+Transfer-Encoding: chunked
+Content-Type: text/xml
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000
+
+<?xml version='1.0' encoding='utf-8'?><sslvpn-tunnel ver='2' dtls='1' patch='1'><dtls-config heartbeat-interval='10' heartbeat-fail-count='10' heartbeat-idle-timeout='10' client-hello-timeout='10' /><tunnel-method value='ppp' /><tunnel-method value='tun' /><fos platform='FG900D' major='5' minor='06' patch='11' build='1700' branch='1700' /><client-config save-password='off' keep-alive='off' auto-connect='off' /><ipv4><assigned-addr ipv4='10.212.134.2' /><split-tunnel-info><addr ip='10.61.0.0' mask='255.255.0.0' /><addr ip='10.58.198.101' mask='255.255.255.255' /><addr ip='170.186.103.0' mask='255.255.255.0' /><addr ip='170.186.104.0' mask='255.255.255.0' /><addr ip='170.186.105.0' mask='255.255.255.0' /><addr ip='170.186.106.0' mask='255.255.255.0' /><addr ip='10.60.0.0' mask='255.255.0.0' /><addr ip='10.62.2.0' mask='255.255.255.0' /><addr ip='10.62.3.0' mask='255.255.255.0' /><addr ip='10.62.4.0' mask='255.255.255.0' /></split-tunnel-info></ipv4><idle-timeout val='3600' /><auth-timeout val='28800' /></sslvpn-tunnel>
+----
+
+03/07/2020 18:01:43 [13817] dns suffix: 
+
+03/07/2020 18:01:43 [13817] xml parsing split tunnel info
+03/07/2020 18:01:43 [13817] xml parse split tunnel info success. Buffer length: 258 bytes
+03/07/2020 18:01:43 [13817] Got local address from ppp, interface will be  up
+03/07/2020 18:01:45 [13817] ppp interface is up
+03/07/2020 18:01:45 [13817] run_scutil 212.80.170.130 0 0...
+03/07/2020 18:01:45 [13817] write argument OK.
+Generating pppd.resolv.conf...Done
+03/07/2020 18:01:46 [13889] begin sysconfig linux
+03/07/2020 18:01:46 [13889] Gateway to FGT: 192.168.1.1
+03/07/2020 18:01:46 [13889] delete route 1.1.1.1
+03/07/2020 18:01:46 [13889] Add the route for 212.80.170.130(192.168.1.1)
+03/07/2020 18:01:46 [13889] Setup split tunnel
+03/07/2020 18:01:46 [13889] route -n add -net 10.61.0.0 netmask 255.255.0.0 gw 10.212.134.2 dev ppp0
+03/07/2020 18:01:46 [13889] route -n add -net 10.58.198.101 netmask 255.255.255.255 gw 10.212.134.2 dev ppp0
+03/07/2020 18:01:46 [13889] route -n add -net 170.186.103.0 netmask 255.255.255.0 gw 10.212.134.2 dev ppp0
+03/07/2020 18:01:46 [13889] route -n add -net 170.186.104.0 netmask 255.255.255.0 gw 10.212.134.2 dev ppp0
+03/07/2020 18:01:46 [13889] route -n add -net 170.186.105.0 netmask 255.255.255.0 gw 10.212.134.2 dev ppp0
+03/07/2020 18:01:46 [13889] route -n add -net 170.186.106.0 netmask 255.255.255.0 gw 10.212.134.2 dev ppp0
+03/07/2020 18:01:46 [13889] route -n add -net 10.60.0.0 netmask 255.255.0.0 gw 10.212.134.2 dev ppp0
+03/07/2020 18:01:46 [13889] route -n add -net 10.62.2.0 netmask 255.255.255.0 gw 10.212.134.2 dev ppp0
+03/07/2020 18:01:46 [13889] route -n add -net 10.62.3.0 netmask 255.255.255.0 gw 10.212.134.2 dev ppp0
+03/07/2020 18:01:46 [13889] route -n add -net 10.62.4.0 netmask 255.255.255.0 gw 10.212.134.2 dev ppp0
+03/08/2020 02:01:52 [13817] ssl read failed[error:00000005:lib(0):func(0):DH lib]:[Success]
+03/08/2020 02:01:52 [13817] io finished, kill pppd
+03/08/2020 02:01:52 [13817] kill_child:13819
+03/08/2020 02:01:52 [13777] select: Interrupted system call
+03/08/2020 02:01:52 [13817] tunnel finished, killing session
+03/08/2020 02:01:52 [13817] killing pppd ...
+03/08/2020 02:01:52 [13777] rcv cmd:1 at state[1]
+03/08/2020 02:01:52 [13817] kill_child:13889
+03/08/2020 02:01:52 [13777] stopping ssl vpn tunnel[v4.0.2332]
+03/08/2020 02:01:52 [13777] kill_child:13817
+03/08/2020 02:01:52 [13777] kill_child:13802
+03/08/2020 02:01:52 [13802] signal rcved, logout now
+03/08/2020 02:01:52 [13777] tunnel terminated
+03/08/2020 02:01:52 [16683] begin cleanup linux...
+03/08/2020 02:01:52 [16683] restore /etc/resolv.conf
+03/08/2020 02:01:52 [16683] clean up route...
+03/08/2020 02:01:52 [6575] set the loglevel to 1
+03/08/2020 02:01:52 [16683] truncate pppd.log
+03/08/2020 02:01:52 [16683] truncate forticlientsslvpn.log
+03/08/2020 02:01:52 [16685] set the loglevel to 1
+03/08/2020 02:01:52 [16685] sslvpn connection version:4.0.2332
+03/08/2020 02:01:52 [16685] rcv cmd:0 at state[0]
+03/08/2020 02:01:52 [16685] starting ssl vpn tunnel[4.0.2332]
+03/08/2020 02:01:52 [13777] ssl vpn tunnel stopped
+03/08/2020 02:01:52 [13777] rcv cmd:2 at state[0]
+03/08/2020 02:01:52 [16725] execl /opt/forticlient-sslvpn/64bit/helper/get_fortisslvpn_info /opt/forticlient-sslvpn/64bit/helper 212.80.170.130 443   ...
+03/08/2020 02:01:52 [16725] trusted CA dir: /home/jose/.fctsslvpn_trustca
+03/08/2020 02:01:52 [16725] set loglevel to 1
+03/08/2020 02:01:52 [16725] Peer's certificate is not valid. action is 1
+03/08/2020 02:01:52 [16725] peer's certificate: 
+Certificate:$    Data:$        Version: 3 (0x2)$        Serial Number:$            0c:2e:8e:e3:42:4c:3f:5b:4b:f6:18:07:c6:da:c5:3d$    Signature Algorithm: sha256WithRSAEncryption$        Issuer: C=US, O=DigiCert Inc, CN=DigiCert SHA2 Secure Server CA$        Validity$            Not Before: Mar 21 00:00:00 2018 GMT$            Not After : Mar 25 12:00:00 2020 GMT$        Subject: C=ES, L=Madrid, O=WIZINK BANK, S.A., OU=WIZINK BANK SA., CN=accesopartners.wizink.es$        Subject Public Key Info:$            Public Key Algorithm: rsaEncryption$                Public-Key: (4096 bit)$                Modulus:$                    00:c7:ff:c7:df:b7:fe:f8:c5:1e:f9:c5:cb:f7:44:$                    66:27:8d:eb:d0:06:84:4c:30:9e:de:bf:e1:ab:bb:$                    30:aa:81:e6:7f:79:e9:5c:07:19:23:ea:6f:d0:9f:$                    2a:e8:58:2c:fe:7d:f6:52:1f:75:a5:4d:97:a5:a9:$                    d0:ca:1b:9b:96:c0:f2:4a:26:24:49:61:de:bc:74:$                    12:67:37:ac:50:1f:bc:ba:15:af:b8:33:62:4c:84:$                    7e:d3:0d:1b:88:37:7a:2c:0d:62:7c:ca:54:0b:8f:$                    82:95:ff:bb:d4:e3:fe:79:0e:01:35:5f:bf:2c:51:$                    c0:f3:17:3b:a5:50:54:10:92:9d:fa:14:8d:01:cb:$                    c7:ae:06:bf:72:fa:75:27:b0:8b:c2:df:4b:01:1f:$                    3c:4c:34:4e:7c:d5:b2:7f:dd:1d:43:e0:01:cf:06:$                    9a:d2:2b:4a:f5:6b:58:47:c4:6a:df:d7:d6:fa:5f:$                    f5:d2:bb:48:fe:48:8f:35:5a:8d:9d:96:32:10:d9:$                    54:15:0c:c2:6d:b8:1e:25:53:0a:24:42:59:40:47:$                    7f:99:c7:4a:4a:f0:d0:00:07:be:a0:96:ab:88:25:$                    39:e2:47:16:0d:d4:bf:59:06:af:fe:59:17:e4:e9:$                    57:d4:af:f9:c0:4a:0e:ee:cd:a9:be:c2:c8:0b:60:$                    f0:19:fa:bb:79:38:49:e1:7c:93:55:7d:b2:53:15:$                    10:dd:ec:92:04:3c:11:c6:7d:46:37:e8:05:db:0d:$                    41:36:76:e9:15:e7:de:22:6e:a1:eb:93:06:64:9a:$                    25:56:85:3a:25:90:37:99:8e:fc:49:dc:26:b1:df:$                    e3:51:e0:40:11:5a:7b:bd:4e:0c:c1:34:68:a1:58:$                    0c:e7:74:4f:9a:ef:a5:c4:93:bb:8f:99:44:a9:c6:$                    1a:e1:43:42:a9:6f:a7:98:46:84:20:8b:6b:bf:5d:$                    e9:a1:7c:68:73:22:51:50:fd:a2:1e:98:95:10:f7:$                    74:4e:c2:30:a2:bf:37:4f:7f:02:72:e9:63:00:33:$                    02:35:76:52:47:28:0f:7e:15:fa:e8:7c:11:47:9a:$                    91:73:d3:7a:b7:17:01:d3:45:89:3b:41:9c:a9:36:$                    f3:f6:a9:41:f4:0d:5d:fc:09:e8:42:9b:e4:b6:99:$                    8d:ad:82:2d:6f:29:32:2c:45:93:fc:f5:52:e8:93:$                    00:bb:b9:ad:be:6c:a4:f2:a0:93:4e:b0:2a:9a:35:$                    2e:b4:9b:8d:91:02:fe:cc:b3:f3:d5:e3:0c:e4:d4:$                    58:36:36:26:37:e4:ef:2f:8b:11:43:e5:6e:4b:35:$                    4d:74:52:7a:b9:53:26:75:8e:4b:9d:13:6b:36:b5:$                    0a:54:7f$                Exponent: 65537 (0x10001)$        X509v3 extensions:$            X509v3 Authority Key Identifier: $                keyid:0F:80:61:1C:82:31:61:D5:2F:28:E7:8D:46:38:B4:2C:E1:C6:D9:E2$$            X509v3 Subject Key Identifier: $                8A:09:E3:9E:31:D0:86:10:96:C6:E4:D9:EF:95:7E:65:0A:6B:4E:1A$            X509v3 Subject Alternative Name: $                DNS:accesopartners.wizink.es$            X509v3 Key Usage: critical$                Digital Signature, Key Encipherment$            X509v3 Extended Key Usage: $                TLS Web Server Authentication, TLS Web Client Authentication$            X509v3 CRL Distribution Points: $$                Full Name:$                  URI:http://crl3.digicert.com/ssca-sha2-g6.crl$$                Full Name:$                  URI:http://crl4.digicert.com/ssca-sha2-g6.crl$$            X509v3 Certificate Policies: $                Policy: 2.16.840.1.114412.1.1$                  CPS: https://www.digicert.com/CPS$                Policy: 2.23.140.1.2.2$$            Authority Information Access: $                OCSP - URI:http://ocsp.digicert.com$                CA Issuers - URI:http://cacerts.digicert.com/DigiCertSHA2SecureServerCA.crt$$            X509v3 Basic Constraints: critical$                CA:FALSE$            CT Precertificate SCTs: $                Signed Certificate Timestamp:$                    Version   : v1(0)$                    Log ID    : A4:B9:09:90:B4:18:58:14:87:BB:13:A2:CC:67:70:0A:$                                3C:35:98:04:F9:1B:DF:B8:E3:77:CD:0E:C8:0D:DC:10$                    Timestamp : Mar 21 13:13:01.979 2018 GMT$                    Extensions: none$                    Signature : ecdsa-with-SHA256$                                30:45:02:20:10:B9:0C:69:1B:85:D8:0E:FE:15:43:27:$                                AB:67:A1:B5:EB:8C:88:CE:A8:CD:ED:D5:29:78:EE:CD:$                                3B:02:45:15:02:21:00:A9:FC:89:95:18:27:16:19:0F:$                                D5:07:34:14:44:47:FB:B3:C0:99:AB:0B:3D:46:34:65:$                                BF:2C:8A:31:F4:D6:E7$                Signed Certificate Timestamp:$                    Version   : v1(0)$                    Log ID    : 6F:53:76:AC:31:F0:31:19:D8:99:00:A4:51:15:FF:77:$                                15:1C:11:D9:02:C1:00:29:06:8D:B2:08:9A:37:D9:13$                    Timestamp : Mar 21 13:13:02.265 2018 GMT$                    Extensions: none$                    Signature : ecdsa-with-SHA256$                                30:45:02:21:00:87:E5:54:07:A1:57:14:90:FD:B0:42:$                                F0:50:07:BB:3C:97:EB:CF:45:FC:3D:8B:EC:FE:9A:51:$                                BB:8E:D0:81:47:02:20:1C:B0:C7:54:60:C9:DD:10:1D:$                                6D:A2:2A:2C:BA:5C:DE:98:83:3B:7D:6B:15:25:B1:4C:$                                33:45:6C:3E:9C:30:B0$                Signed Certificate Timestamp:$                    Version   : v1(0)$                    Log ID    : BB:D9:DF:BC:1F:8A:71:B5:93:94:23:97:AA:92:7B:47:$                                38:57:95:0A:AB:52:E8:1A:90:96:64:36:8E:1E:D1:85$                    Timestamp : Mar 21 13:13:02.227 2018 GMT$                    Extensions: none$                    Signature : ecdsa-with-SHA256$                                30:45:02:21:00:B8:94:2F:81:2A:11:76:44:D7:D5:B1:$                                E4:02:31:BB:C1:30:22:EF:57:FE:EE:63:23:75:4E:81:$                                19:A6:61:B9:13:02:20:1B:5D:8F:34:AD:3C:EC:40:92:$                                CD:B4:FA:2C:12:D8:13:0D:4B:03:D3:2D:A1:7C:E4:B1:$                                4E:8E:2C:FB:49:68:0A$    Signature Algorithm: sha256WithRSAEncryption$         29:82:c2:16:fc:b6:6d:8e:19:07:e3:76:e7:49:dd:26:af:10:$         1c:2c:53:a8:a7:37:5e:d7:7a:57:f0:a1:05:43:2d:69:9f:76:$         46:c4:df:56:fd:bb:cd:04:cd:3f:b3:d8:cf:13:59:a3:c3:a4:$         81:89:b6:c2:ef:59:f7:c9:4c:6c:89:73:28:16:ef:b5:11:d9:$         45:fd:a4:bc:84:32:ab:67:d9:ff:b2:ab:a9:4b:b9:d9:dd:4c:$         72:18:13:1e:32:15:dd:aa:6c:fd:e0:52:b3:9b:aa:ee:81:2c:$         1b:74:dc:00:74:e1:9b:66:45:b6:26:0d:1a:5c:8a:e0:a0:bd:$         db:e6:ce:6f:d2:5d:93:96:d5:37:16:57:75:e7:6c:c4:58:de:$         e1:02:9d:b8:ae:23:22:29:a6:8a:7d:93:da:f8:a9:fc:f4:1f:$         7a:ca:73:23:6e:ce:1c:bb:25:fa:59:20:4d:01:d2:f1:c0:c8:$         b0:8c:33:e9:26:1e:52:d8:3b:2a:62:50:88:cc:97:4d:d9:98:$         b5:60:82:d4:0f:74:fe:69:62:be:fc:a5:7f:f5:7d:ed:88:aa:$         d9:8f:df:61:f2:40:59:72:f7:91:af:df:29:22:fc:5c:0c:75:$         79:0c:af:6c:6c:8b:6c:98:a3:3e:73:dd:2a:b5:c1:40:91:11:$         57:14:b9:e0$
+03/08/2020 02:01:52 [16725] realm is enabled: 
+03/08/2020 02:01:52 [16725] no Content-Length
+03/08/2020 02:01:52 [16725] try to get cookie for the first time: 98 :  SVPNNETWORKCOOKIE=; path=/remote/network; expires=Sun, 11 Mar 1984 12:00:00 GMT; secure; httponly
+03/08/2020 02:01:52 [16725] no Content-Length
+03/08/2020 02:01:52 [16725] cookie: SVPNCOOKIE=8d+2LNxRKjcg0mZykDcLLyuAlhe5rgMjtzzaHREd3QitjHBulkgLzQmqa5yg0xXDFMBj+KjimC+UU1QIEbwonyl21p6U+r1ufXJ0O2n8eACI3BIw3ZlW405r04bTtfmtEO1GpC8HjUR7UcBQ9h6qjjyzNO3eR96brSm2+QKrmUgGdwPuoNvFiuGntOgRTpqGeUMz6n1FYMDft1ZSsL96d7MZA2n6mK14mrxtsB6uZkw=
+03/08/2020 02:01:52 [16725] no Content-Length
+03/08/2020 02:01:52 [16725] no Content-Length
+03/08/2020 02:01:52 [16725] 0|212.80.170.130|443|1|10.61.0.0/255.255.0.0,10.58.198.101/255.255.255.255,170.186.103.0/255.255.255.0,170.186.104.0/255.255.255.0,170.186.105.0/255.255.255.0,170.186.106.0/255.255.255.0,10.60.0.0/255.255.0.0,10.62.2.0/255.255.255.0,10.62.3.0/255.255.255.0,10.62.4.0/255.255.255.0|8d+2LNxRKjcg0mZykDcLLyuAlhe5rgMjtzzaHREd3QitjHBulkgLzQmqa5yg0xXDFMBj+KjimC+UU1QIEbwonyl21p6U+r1ufXJ0O2n8eACI3BIw3ZlW405r04bTtfmtEO1GpC8HjUR7UcBQ9h6qjjyzNO3eR96brSm2+QKrmUgGdwPuoNvFiuGntOgRTpqGeUMz6n1FYMDft1ZSsL96d7MZA2n6mK14mrxtsB6uZkw=|0
+03/08/2020 02:01:52 [16685] ssl vpn tunnel started
+03/08/2020 02:01:52 [16728] server=212.80.170.130[212.80.170.130] port=443[443] version=1 tunnel=10.61.0.0/255.255.0.0,10.58.198.101/255.255.255.255,170.186.103.0/255.255.255.0,170.186.104.0/255.255.255.0,170.186.105.0/255.255.255.0,170.186.106.0/255.255.255.0,10.60.0.0/255.255.0.0,10.62.2.0/255.255.255.0,10.62.3.0/255.255.255.0,10.62.4.0/255.255.255.0 cookie=8d+2LNxRKjcg0mZykDcLLyuAlhe5rgMjtzzaHREd3QitjHBulkgLzQmqa5yg0xXDFMBj+KjimC+UU1QIEbwonyl21p6U+r1ufXJ0O2n8eACI3BIw3ZlW405r04bTtfmtEO1GpC8HjUR7UcBQ9h6qjjyzNO3eR96brSm2+QKrmUgGdwPuoNvFiuGntOgRTpqGeUMz6n1FYMDft1ZSsL96d7MZA2n6mK14mrxtsB6uZkw= exclusive routing: 0
+
+03/08/2020 02:01:52 [16728] starting pppd
+03/08/2020 02:01:52 [16728] use tty:/dev/pts/3
+03/08/2020 02:01:52 [16728] connecting to 212.80.170.130:443
+03/08/2020 02:01:52 [16728] [xml config]: GET /remote/fortisslvpn_xml ... (received 1353 bytes): 
+HTTP/1.1 200 OK
+Date: Sun, 08 Mar 2020 01:01:53 GMT
+Server: xxxxxxxx-xxxxx
+Transfer-Encoding: chunked
+Content-Type: text/xml
+X-Frame-Options: SAMEORIGIN
+Content-Security-Policy: frame-ancestors 'self'
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Strict-Transport-Security: max-age=31536000
+
+<?xml version='1.0' encoding='utf-8'?><sslvpn-tunnel ver='2' dtls='1' patch='1'><dtls-config heartbeat-interval='10' heartbeat-fail-count='10' heartbeat-idle-timeout='10' client-hello-timeout='10' /><tunnel-method value='ppp' /><tunnel-method value='tun' /><fos platform='FG900D' major='5' minor='06' patch='11' build='1700' branch='1700' /><client-config save-password='off' keep-alive='off' auto-connect='off' /><ipv4><assigned-addr ipv4='10.212.134.2' /><split-tunnel-info><addr ip='10.61.0.0' mask='255.255.0.0' /><addr ip='10.58.198.101' mask='255.255.255.255' /><addr ip='170.186.103.0' mask='255.255.255.0' /><addr ip='170.186.104.0' mask='255.255.255.0' /><addr ip='170.186.105.0' mask='255.255.255.0' /><addr ip='170.186.106.0' mask='255.255.255.0' /><addr ip='10.60.0.0' mask='255.255.0.0' /><addr ip='10.62.2.0' mask='255.255.255.0' /><addr ip='10.62.3.0' mask='255.255.255.0' /><addr ip='10.62.4.0' mask='255.255.255.0' /></split-tunnel-info></ipv4><idle-timeout val='3600' /><auth-timeout val='28800' /></sslvpn-tunnel>
+----
+
+03/08/2020 02:01:52 [16728] dns suffix: 
+
+03/08/2020 02:01:52 [16728] xml parsing split tunnel info
+03/08/2020 02:01:52 [16728] xml parse split tunnel info success. Buffer length: 258 bytes
+03/08/2020 02:01:53 [16728] Got local address from ppp, interface will be  up
+03/08/2020 02:01:54 [16728] ppp interface is up
+03/08/2020 02:01:54 [16728] run_scutil 212.80.170.130 0 0...
+03/08/2020 02:01:54 [16728] write argument OK.
+Generating pppd.resolv.conf...Done
+03/08/2020 02:01:56 [16785] begin sysconfig linux
+03/08/2020 02:01:56 [16785] Gateway to FGT: 192.168.1.1
+03/08/2020 02:01:56 [16785] delete route 1.1.1.1
+03/08/2020 02:01:56 [16785] Add the route for 212.80.170.130(192.168.1.1)
+03/08/2020 02:01:56 [16785] Setup split tunnel
+03/08/2020 02:01:56 [16785] route -n add -net 10.61.0.0 netmask 255.255.0.0 gw 10.212.134.2 dev ppp0
+03/08/2020 02:01:56 [16785] route -n add -net 10.58.198.101 netmask 255.255.255.255 gw 10.212.134.2 dev ppp0
+03/08/2020 02:01:56 [16785] route -n add -net 170.186.103.0 netmask 255.255.255.0 gw 10.212.134.2 dev ppp0
+03/08/2020 02:01:56 [16785] route -n add -net 170.186.104.0 netmask 255.255.255.0 gw 10.212.134.2 dev ppp0
+03/08/2020 02:01:56 [16785] route -n add -net 170.186.105.0 netmask 255.255.255.0 gw 10.212.134.2 dev ppp0
+03/08/2020 02:01:56 [16785] route -n add -net 170.186.106.0 netmask 255.255.255.0 gw 10.212.134.2 dev ppp0
+03/08/2020 02:01:56 [16785] route -n add -net 10.60.0.0 netmask 255.255.0.0 gw 10.212.134.2 dev ppp0
+03/08/2020 02:01:56 [16785] route -n add -net 10.62.2.0 netmask 255.255.255.0 gw 10.212.134.2 dev ppp0
+03/08/2020 02:01:56 [16785] route -n add -net 10.62.3.0 netmask 255.255.255.0 gw 10.212.134.2 dev ppp0
+03/08/2020 02:01:56 [16785] route -n add -net 10.62.4.0 netmask 255.255.255.0 gw 10.212.134.2 dev ppp0

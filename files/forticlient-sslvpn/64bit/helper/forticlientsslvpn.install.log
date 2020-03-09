@@ -1,0 +1,10 @@
+Checking if pppd is installed...OK
+Checking if iproute package is installed...OK
+Setup /opt/forticlient-sslvpn/64bit/./helper/subproc
+/opt/forticlient-sslvpn/64bit/./helper/waitppp.sh
+sudo failed, use su instead...
+begin setup at /opt/forticlient-sslvpn/64bit/helper/
+Checking if pppd is installed...OK
+Checking if iproute package is installed...OK
+Setup /opt/forticlient-sslvpn/64bit/helper/subproc
+/opt/forticlient-sslvpn/64bit/helper/waitppp.sh
